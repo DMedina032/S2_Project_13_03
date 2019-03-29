@@ -7,8 +7,8 @@
 
    Crossword Puzzle Script
    
-   Author: 
-   Date:   
+   Author: Dajah Medina
+   Date:   3.28.19
    
    Global Variables
    ================
@@ -48,19 +48,40 @@
 
 
 */
+var allLetters;
+var currentLetters;
+var wordLetters;
+var acrossClue;
+var downClue;
+var typeDirection;
+
+window.onload = init;
+
+function init() {
+      allLetters = document.querySelectorAll("table#corssword");
+      currentLetters[i].onclick = allLetters;
+      var acrossID = ("data-clue-a");
+      var downID = ("data-clue-d");
+      acrossClue = document.getElementById("acrossID");
+      downClue = document.getElementById("downId");
+}
 
 
+function formatPuzzle(puzzleLetter) {
+      for (var i = 0; i < allLetters.length; i++) {
+            style.backgroundColor = "";
+      }
+      acrossClue[i].style.color === "";
+      downClue[i].style.color === "";
+}
+
+if (currentLetters.)
 
 
-
-   
-
+      /*====================================================*/
 
 
-
-
-/*====================================================*/
 
 function getChar(keyNum) {
-   return String.fromCharCode(keyNum);
+      return String.fromCharCode(keyNum);
 }
